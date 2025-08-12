@@ -3,6 +3,7 @@ Security Alert Monitoring &amp; Incident Response
  Project Overview
 The objective is to simulate the work of a Security Operations Center (SOC) analyst by monitoring, analyzing, and responding to simulated security alerts using Splunk. The focus is on identifying suspicious activity, classifying alerts, and producing an actionable incident response report.
 
+
 "Setup Instructions"
 
 1.Prepare the Data:
@@ -10,6 +11,7 @@ The objective is to simulate the work of a Security Operations Center (SOC) anal
 2.Used the file SOC_Task2_Sample_Logs.txt as the data source.
 
 3.Saved the file locally 
+
 
 ""Import into Splunk""
 
@@ -36,7 +38,8 @@ Configured Splunk to extract:
 
 5.threat 
 
-METHODOLOGY
+
+""METHODOLOGY""
 
 1.log injection: The logs were uploaded into Splunk from the provided .txt file and verified for correct timestamp parsing.
 
@@ -67,12 +70,14 @@ Medium Severity which are Multiple failed logins followed by success (possible b
 
 Low Severity which are file accesses from known IPs
 
-Documentation
+
+""Documentation""
 
 All high  and medium-severity events were documented in the final investigation report with time, user, IP, and description of the activity.
 
 
-Key Findings
+
+""Key Findings""
 
 From the analysis of SOC_Task2_Sample_Logs.txt:
 
@@ -99,7 +104,8 @@ Frequent Connection Attempts:
 charlie and david showed high volumes of connection attempts to multiple subnets without corresponding legitimate activity.
 
 
-Conclusion
+
+""Conclusion""
 
 This investigation revealed clear signs of active threats and compromised accounts. Immediate remediation steps include:
 
