@@ -1,1 +1,39 @@
+1. Failed logins count per IP/user:  sourcetype="soc_task2_security_logs" action="login failed"
+| stats count AS failed_attempts BY ip, user
+| sort - failed_attempts
+What this  do:
+
+Filter: Finds events in soc_task2_security_logs where action="login failed".
+
+Aggregate: Counts how many failed attempts there are per IP and user combination.
+
+Sort: Orders results so the IP/user pairs with the most failed attempts appear first.
+
+
+2.sourcetype="soc_task2_security_logs" action="malware detected"
+| stats count BY user, ip, threat
+What this spl do:
+
+Filter: Finds only malware detected events in the given sourcetype.
+
+Aggregate: Counts the number of times each threat was detected for each user/IP pair.
+
+Sort: Shows the most frequent detections first.
+
+3. sourcetype="soc_task2_security_logs"  action=file accessed
+| stats count BY user, ip
+|head 5
+what this spl do :
+Filter logs for
+
+sourcetype="soc_task2_security_logs"
+
+action="file accessed"
+
+Count the number of events grouped by user and ip.
+
+Sort results in descending order of count (| sort - count).
+
+Limit to the top 5 results (| head 5).
+
 
