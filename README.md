@@ -5,9 +5,11 @@ The objective is to simulate the work of a Security Operations Center (SOC) anal
 
 "Setup Instructions"
 
-Prepare the Data:
-Used the file SOC_Task2_Sample_Logs.txt as the data source.
-Saved the file locally 
+1.Prepare the Data:
+
+2.Used the file SOC_Task2_Sample_Logs.txt as the data source.
+
+3.Saved the file locally 
 
 ""Import into Splunk""
 
@@ -35,6 +37,7 @@ Configured Splunk to extract:
 5.threat 
 
 METHODOLOGY
+
 1.log injection: The logs were uploaded into Splunk from the provided .txt file and verified for correct timestamp parsing.
 
 2. Parsing & Field Extraction: Splunk’s field extractor was used to create regex patterns to capture user, IP address, action, and threat type.
@@ -55,6 +58,7 @@ spl used :sourcetype="soc_task2_security_logs" action="malware detected"| stats 
 spl usded: sourcetype="soc_task2_security_logs" action="file accessed"| stats count BY user, ip
 
 4. Event Classification:
+
 Incidents were categorized based on severity:
 
 High Severity which are Malware detections (Trojan, Ransomware and Rootkit)
@@ -64,10 +68,12 @@ Medium Severity which are Multiple failed logins followed by success (possible b
 Low Severity which are file accesses from known IPs
 
 Documentation
+
 All high  and medium-severity events were documented in the final investigation report with time, user, IP, and description of the activity.
 
 
 Key Findings
+
 From the analysis of SOC_Task2_Sample_Logs.txt:
 
 Multiple Malware Detections:
@@ -94,6 +100,7 @@ charlie and david showed high volumes of connection attempts to multiple subnets
 
 
 Conclusion
+
 This investigation revealed clear signs of active threats and compromised accounts. Immediate remediation steps include:
 
 Blocking malicious IP addresses
