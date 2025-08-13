@@ -97,7 +97,7 @@ Several users had failed logins followed shortly by a successful login from the 
 
 Unusual File Access Patterns:
 
-Sensitive files accessed from external IP ranges (203.0.113.x, 198.51.100.x) that are not part of internal subnets.
+Sensitive files accessed from external IP ranges (203.0.113.77, 198.51.100.42) that are not part of internal subnets.
 
 Frequent Connection Attempts:
 
@@ -116,3 +116,16 @@ Forcing password resets for affected accounts
 Running endpoint malware scans
 
 Reviewing firewall rules for unusual outbound traffic
+
+
+
+ Security Incident Multiple Malware Infections 
+
+
+Hello Manager,
+We detected and contained several high-severity security events, including ransomware, rootkit, trojan, and worm threats, across multiple hosts on July 3rd, 2025. One account was accessed after failed login attempts, suggesting potential compromise. All affected systems have been isolated and credentials reset.
+Remediation is in progress. Full report attached.
+
+Regards,
+osatohanmwen precious martins 
+SOC Analyst (Intern)
