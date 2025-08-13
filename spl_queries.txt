@@ -51,3 +51,14 @@ Sorts the list in descending order by login count
 | timechart span=1h count BY ip
 
 
+
+6..sourcetype="soc_task2_security_logs" 
+| eval severity=case(
+    action="malware detected", "High",
+    action="login failed", "Medium",
+    action="connection attempt", "Low",
+    action="file accessed", "Medium",
+    true(), "Low"
+)
+| stats count BY severity
+
