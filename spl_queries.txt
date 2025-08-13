@@ -37,3 +37,14 @@ Sort results in descending order of count (| sort - count).
 Limit to the top 5 results (| head 5).
 
 
+4.. action=login success
+| stats count AS successful_logins BY user, ip
+| sort - successful_logins
+
+Filters only events where action="login success"
+
+Counts how many successful logins each user had from each IP
+
+Sorts the list in descending order by login count
+
+
