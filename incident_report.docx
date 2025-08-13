@@ -19,6 +19,8 @@ Disabled affected user accounts.
 Blocked malicious IPs.
 
 Initiated forensic investigation and malware scans.
+ 
+Impact: Potential compromise of multiple endpoints and accounts, presenting a medium-to-high business risk.
 
 Recommendations:
 
