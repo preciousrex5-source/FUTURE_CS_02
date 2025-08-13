@@ -38,6 +38,8 @@ Configured Splunk to extract:
 
 5.threat 
 
+TOATAL LOGS EXTRACTED : 50
+
 
 ""METHODOLOGY""
 
