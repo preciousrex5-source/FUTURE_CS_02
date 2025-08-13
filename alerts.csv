@@ -1,1 +1,74 @@
+Summary of Detected Suspicious Alerts
 
+ALR-001
+
+2025-07-03 09:10:14
+
+bob
+
+172.16.0.3
+
+malware detected
+
+Ransomware Behavior
+
+High
+
+
+ALR-002
+
+2025-07-03 07:51:14
+
+eve
+
+10.0.0.5
+
+malware detected
+
+Rootkit Signature
+
+High
+
+
+ALR-003
+
+2025-07-03 07:45:14
+
+charlie
+
+172.16.0.3
+
+malware detected
+
+Trojan Detected
+
+High
+
+
+ALR-004
+
+2025-07-03 09:07:14
+
+eve
+
+203.0.113.77
+
+login success
+
+After failed attempts
+
+Medium
+
+ALR-005
+
+2025-07-03 05:06:14
+
+bob
+
+203.0.113.77
+
+malware detected
+
+Worm Infection Attempt
+
+High
