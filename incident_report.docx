@@ -1,1 +1,42 @@
+ Incident Analysis :august 13, 2025
+Summary:
+On August 13, 2025, our SOC detected multiple security incidents, including malware infections, unauthorized logins, and suspicious connection attempts across both internal and external IP ranges. Threats included Trojan, Rootkit, Spyware, Worm, and Ransomware variants.
+
+Key Observations:
+
+Users Involved: alice, bob, charlie, david, eve.
+
+Affected Systems: Internal (10.0.0.5, 172.16.0.3, 192.168.1.101) and external IPs (198.51.100.42, 203.0.113.77).
+
+Activities Detected: Malware alerts, repeated failed logins, unusual file access, and high-volume connection attempts.
+
+Actions Taken:
+
+Isolated compromised endpoints.
+
+Disabled affected user accounts.
+
+Blocked malicious IPs.
+
+Initiated forensic investigation and malware scans.
+
+Recommendations:
+
+Enforce MFA and strong password policies.
+
+Update and harden endpoint protection.
+
+Conduct user security awareness training.
+
+Perform full network traffic review for possible data exfiltration.
+
+
+
+
+
+
+
+
+
+
 
