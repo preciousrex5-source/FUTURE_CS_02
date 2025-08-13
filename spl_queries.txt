@@ -47,4 +47,7 @@ Counts how many successful logins each user had from each IP
 
 Sorts the list in descending order by login count
 
+5.action=connection attempt
+| timechart span=1h count BY ip
+
 
